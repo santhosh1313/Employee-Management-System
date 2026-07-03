@@ -27,12 +27,14 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = [
+    "employee-management-system-1-plk7.onrender.com",
     "ems-uy1m.onrender.com",
     "localhost",
     "127.0.0.1",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+    "https://employee-management-system-1-plk7.onrender.com",
     "https://ems-uy1m.onrender.com",
 ]
 
