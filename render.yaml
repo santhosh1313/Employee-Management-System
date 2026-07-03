@@ -3,7 +3,7 @@ services:
     name: employee-management-system
     runtime: python
     buildCommand: pip install -r requirements.txt && cd myproject && python manage.py collectstatic --no-input && python manage.py migrate
-    startCommand: cd myproject && python employee/create_superuser.py && gunicorn myproject.wsgi  
+    startCommand: startCommand: cd myproject && python manage.py shell < create_superuser.py && gunicorn myproject.wsgi 
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
