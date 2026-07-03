@@ -1,0 +1,9 @@
+{% extends 'employee/base.html' %}
+{% block content %}
+<h2>Welcome, {{ user.username }}</h2>
+<div class="card p-3 mt-3" style="max-width: 300px;">
+    <h5>Total Employees</h5>
+    <h1>{{ total_employees }}</h1>
+</div>
+<a href="{% url 'employee_list' %}" class="btn btn-primary mt-3">View All Employees</a>
+{% endblock %}
